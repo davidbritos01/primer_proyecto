@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&family=Roboto+Mono&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+font-size: 62.5%;
+height: 100%;
+} 
+body{
+/* max-width: 100%;*/
+min-height: 100vh;
+/* min-height: 100vh; */
+display: grid;
+grid-template-rows:0.25fr auto 0.1fr;
+grid-template-columns: 1fr;
+grid-template-areas:
+"header"
+"main"
+"footer"
+;
+}
+
+li {
+list-style-type: none;
+}
+
+a {
+text-decoration: none;
+color: black;
+
+}
+
+a:hover{
+text-decoration-line: underline;
+text-decoration-color: gray;
+text-decoration-style: solid;
+}
+header {
+grid-area: header;
+font-family: 'Roboto Mono', monospace;
+/* background-color: #E9C46A; */
+background-color: #F1FAEE;
+align-content: center;
+padding-left: 1rem;
+display: grid;
+grid-template-columns: 0.5fr auto;
+grid-template-rows: 1fr;
+grid-template-areas:
+"header-logo" "header-menu"
+;
+
+}
+.header-logo {
+grid-area: header-logo;
+/* flexbox */
+display: flex;
+gap:1rem;
+flex-wrap: wrap;
+align-items: center;
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.header-img {
+width: 6rem;
+height: 6rem;
+}
+
+.header-menu {
+grid-area: header-menu;
+/* flexbox */
+display: flex;
+height: 100%;
+align-items: center;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.header-nav li a {
+color: black;
+font-size: 2rem;
+}
+
+/* styles main  */
+.main {
+grid-area: main;
+font-family: 'Roboto Flex', sans-serif;
+background-color: white;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-evenly;
+}
+
+.img-main {
+width: 20rem;
+padding-bottom: 1.5em;
+
+}
+
+.caja1 {
+grid-area: caja1;
+color:white;
+padding: 1.2rem;
+/* flexbox */
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+align-content: center;
+width: 30rem;
+height: 40rem;
+border-style: groove;
+background-color: #3d405b;
+}
+
+.caja2 {
+grid-area: caja2;
+color:white;
+padding: 1.2rem;
+/* flexbox */
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+width: 30rem;
+height: 40rem;
+border-style: groove;
+background-color: #3d405b;
+}
+
+.caja3 {
+grid-area: caja3;
+color:white;
+padding: 1.2rem;
+/* flexbox */
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+align-content: center;
+width: 30rem;
+height: 40rem;
+border-style: groove;
+background-color: #3d405b;
+}
+
+h2 {
+font-size: 3rem;
+}
+
+.parrafo  {
+padding-right: 1rem;
+margin: 0;
+padding-left: 1rem;
+font-size: 1.7rem;
+line-height: 2rem;
+}
+
+button {
+width: 12rem;
+height: 3rem;
+border-radius: 7%;
+font-size: 1.5em;
+padding: 0.5rem;
+background-color: rgb(240, 105, 105);
+cursor: pointer;
+}
+
+
+/* FOOTER STYLES */
+footer {
+grid-area: footer;
+font-family: 'Roboto Mono', monospace;
+display: flex;
+flex-wrap: wrap;
+padding: 0.5rem;
+gap:0.5rem;
+align-items: center;
+justify-content:end;
+color:white;
+background-color: #14213D;
+}
+
+footer h2 {
+font-size: 1.3rem;
+}
+
+.icono-linkedin {
+/* padding-right:3px; */
+width: 1.9rem;
+height: 1.8rem;
+}
+
+/* MEDIA  QUERIES*/
+/* DESKTOPS FIRST */
+@media (max-width: 320px){
+    .header {
+    justify-content: space-between;
+    grid-template-rows: repeat(2,2fr); 
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header-logo" 
+    "header-nav" 
+    };
+    }
+    .header-logo {
+    padding-top: 1rem;
+    justify-content: center;
+    }
+
+
+@media (max-width: 320px){
+    .body {
+    grid-template-rows: repeat(3,auto); 
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header" 
+    "main"
+    "footer" 
+    ;
+
+    justify-content: space-evenly;
+    }
+    footer {
+    font-size: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    }
+}   
+
+/* ESTILOS BLOG */
+
+.caja-texto {
+padding-top: 1rem;
+padding-left: 3rem;
+padding-right: 3rem;
+display: flex;
+flex-direction: column;
+flex-flow: wrap;
+}
+
+.caja-texto h2 {
+/* padding: 0.5rem 1rem; */
+font-size: 3rem;
+}
+
+.caja-texto p {
+font-size: 2rem;
+line-height: 1.5em;
+}
+
+.img-vs {
+width: 100%;
+height: 100%;
+margin-top: 1.2rem;
+margin-right: 1.2rem;
+margin-bottom: 1.2rem;
+border-style: groove;
+}
+
+iframe {
+margin: 5rem auto;
+height: 55rem;
+}
