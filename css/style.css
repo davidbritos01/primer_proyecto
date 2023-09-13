@@ -14,6 +14,8 @@ height: 100%;
 body{
 /* max-width: 100%;*/
 min-height: 100vh;
+min-width: 110px;
+max-width: 100%;
 /* min-height: 100vh; */
 display: grid;
 grid-template-rows:0.25fr auto 0.1fr;
@@ -92,70 +94,55 @@ grid-area: main;
 font-family: 'Roboto Flex', sans-serif;
 background-color: white;
 display: flex;
-flex-direction: row;
 flex-wrap: wrap;
+flex-direction: column;
 align-items: center;
-justify-content: space-evenly;
+margin-top:3rem;
+justify-content:space-evenly;
+
 }
 
 .img-main {
 width: 20rem;
 padding-bottom: 1.5em;
+}
 
+.cajas {
+color:white;
+padding: 1.2rem;
+margin-bottom: 3rem;
+/* flexbox */
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items: center;
+align-content: center;
+width: 40rem;
+height: 40rem;
+border-style: groove;
+background-color: #3d405b;
 }
 
 .caja1 {
 grid-area: caja1;
-color:white;
-padding: 1.2rem;
-/* flexbox */
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-align-items: center;
-align-content: center;
-width: 30rem;
-height: 40rem;
-border-style: groove;
-background-color: #3d405b;
 }
 
 .caja2 {
 grid-area: caja2;
-color:white;
-padding: 1.2rem;
-/* flexbox */
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-align-items: center;
-width: 30rem;
-height: 40rem;
-border-style: groove;
-background-color: #3d405b;
 }
 
 .caja3 {
-grid-area: caja3;
-color:white;
-padding: 1.2rem;
-/* flexbox */
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-align-items: center;
-align-content: center;
-width: 30rem;
-height: 40rem;
-border-style: groove;
-background-color: #3d405b;
+grid-area: caja3; 
 }
 
-h2 {
+
+.cajas h2 {
 font-size: 3rem;
 }
 
 .parrafo  {
+text-align: center;
 padding-right: 1rem;
 margin: 0;
 padding-left: 1rem;
@@ -173,7 +160,55 @@ background-color: rgb(240, 105, 105);
 cursor: pointer;
 }
 
+/* formulario de contacto */
+#box-form {
+display: flex;
+justify-content: center;
+width: 100%;
+background-color: #8e7dbe;
+transition: 0.4s;
+}
+.form {
+height: 37rem;
+width: 30rem;
+font-size: 1.7rem;
+display: flex;
+flex-direction: column;
+gap:1rem;
+background-color: rgb(67, 186, 180);
+border-color: black;
+margin-bottom: 1rem;
+justify-content: center;
+}
 
+.caja-form{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+margin-bottom: 1.5rem;
+align-items: center;
+line-height: 2rem;
+}
+
+.datos {
+width: 22rem;
+height: 2.5rem;
+border-radius: 2rem;
+text-align: center;
+}
+.caja-msg {
+width: 22rem;
+height: 9rem;
+border-radius: 2rem;
+padding: 1rem;
+}
+
+.button-form {
+font-size: 1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 /* FOOTER STYLES */
 footer {
 grid-area: footer;

@@ -20,33 +20,65 @@
           <li><a href="./pages/blog.html">Blog</a></li>
           <li><a href="./pages/noticias.html">Noticias</a></li>
           <li><a href="./pages/proyectos.html">Proyectos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="index.html#box-form">Contacto</a></li>
         </ul>
       </nav>
     </header>
     <main class="main">
     <!--   <div class="cajas"> -->
-        <div class="caja1">
-          <h2>¿  Por qué un Blog?</h2>
-          <p class="parrafo">Principalmente es un espacio donde voy a...</p>
+      <div class="caja1"> 
+        <div class="cajas">
+          <h2> VS Studio Code en Debian </h2>
+          <p class="parrafo"> Instalar Visual Studio Code en ...</p>
           <img class="img-main" src="./files/img/pensando.jpg" alt="pensando">
           <a href="./pages/blog.html" target="_blank"><button>Ir al blog</button></a>
         </div>
+      </div>
 
-        <div class="caja2">
+      <div class="caja2">
+        <div class="cajas">
           <h2> Noticias </h2>
           <p class="parrafo">De todo un poco, un mix sobre programación, eventos, ciberseguridad etc ...</p>
           <img class="img-main" src="./files/img/noticias.jpeg" alt="pensando">
           <a href="./pages/noticias.html" target="_blank"><button>Ir a noticias</button></a>
         </div>
+      </div>  
 
-        <div class="caja3">
+      <div class="caja3">
+        <div class="cajas">
           <h2> Proyectos </h2>
           <p class="parrafo">Ideas que están en desarrollo o que algún día dejaré de procrastinar ...</p>
           <img class="img-main" src="./files/img/proyectos.png" alt="pensando">
           <a href="./pages/proyectos.html" target="_blank"><button>Ir a proyectos</button></a>
         </div>
+      </div>  
+        
 <!--       </div> -->
+      <div id="box-form">
+        <div class="form">
+          <form action="" method="post">
+            <div class="caja-form">
+              <label for="name">Nombre:</label>
+              <input class="datos" type="text" id="name" name="user_name">
+            </div>
+              
+            <div class="caja-form">
+              <label for="mail">Correo electrónico:</label>
+              <input class="datos" type="email" id="mail" name="user_mail" placeholder="ejemplo@tucorreo.com">
+            </div>
+
+            <div class="caja-form">
+              <label for="message">Mensaje:</label>
+              <textarea class="caja-msg" id="mail" name="user_message"></textarea>
+            </div>
+      
+            <div class="button-form">
+              <a href="#"><button type="submit">Enviar</button></a>
+            </div>
+            
+          </form>
+        </div>  
+      </div>  
     </main>
   
     <footer class="footer">
