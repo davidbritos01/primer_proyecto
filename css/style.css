@@ -39,7 +39,7 @@ color: black;
 
 .header-link:hover{
 text-decoration-line: underline;
-text-decoration-color: gray;
+text-decoration-color: red;
 text-decoration-style: solid;
 }
 header {
@@ -302,7 +302,7 @@ color: grey;
 
 .blog-link:hover {
 color:black;
-background-color: grey;
+background-color: yellow;
 }
 .caja-texto {
 padding-top: 1rem;
@@ -314,7 +314,6 @@ flex-flow: wrap;
 }
 
 .consola{
-
 background-color: black;
 color:white;
 }
@@ -349,4 +348,20 @@ border-style: groove;
 iframe {
 margin: 5rem auto;
 height: 55rem;
+}
+
+
+/* noticias */
+.noticias-img{
+display: flex;
+padding: 2rem;
+}
+.noticias-img-00 {
+width: 50rem;
+padding-bottom: 1.5em;
+}
+
+.noticias-img-01 {
+width: 30rem;
+padding-bottom: 1.5em;
 }
