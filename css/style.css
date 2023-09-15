@@ -37,7 +37,7 @@ color: black;
 
 }
 
-a:hover{
+.header-link:hover{
 text-decoration-line: underline;
 text-decoration-color: gray;
 text-decoration-style: solid;
@@ -46,9 +46,9 @@ header {
 grid-area: header;
 font-family: 'Roboto Mono', monospace;
 /* background-color: #E9C46A; */
-background-color: #F1FAEE;
+background-color: #3d405b;
 align-content: center;
-padding-left: 1rem;
+/* padding-left: 1rem; */
 display: grid;
 grid-template-columns: 0.5fr auto;
 grid-template-rows: 1fr;
@@ -61,10 +61,12 @@ grid-template-areas:
 grid-area: header-logo;
 /* flexbox */
 display: flex;
+color: white;
 gap:1rem;
 flex-wrap: wrap;
 align-items: center;
 font-size: 1.5rem;
+padding-bottom: 1rem;
 font-weight: bold;
 }
 
@@ -84,7 +86,7 @@ justify-content: space-around;
 }
 
 .header-nav li a {
-color: black;
+color: white;
 font-size: 2rem;
 }
 
@@ -97,13 +99,13 @@ display: flex;
 flex-wrap: wrap;
 flex-direction: column;
 align-items: center;
-margin-top:3rem;
-justify-content:space-evenly;
+margin:3rem auto;
+justify-content:space-around;
 
 }
 
 .img-main {
-width: 20rem;
+width: 30rem;
 padding-bottom: 1.5em;
 }
 
@@ -118,9 +120,10 @@ flex-wrap: wrap;
 justify-content: space-evenly;
 align-items: center;
 align-content: center;
-width: 40rem;
-height: 40rem;
+width: 50rem;
+height: 48rem;
 border-style: groove;
+border-radius: 2rem;
 background-color: #3d405b;
 }
 
@@ -135,7 +138,6 @@ grid-area: caja2;
 .caja3 {
 grid-area: caja3; 
 }
-
 
 .cajas h2 {
 font-size: 3rem;
@@ -157,6 +159,7 @@ border-radius: 7%;
 font-size: 1.5em;
 padding: 0.5rem;
 background-color: rgb(240, 105, 105);
+border-radius: 2rem;
 cursor: pointer;
 }
 
@@ -165,22 +168,30 @@ cursor: pointer;
 display: flex;
 justify-content: center;
 width: 100%;
-background-color: #8e7dbe;
+background-color: white;
 transition: 0.4s;
 }
 .form {
-height: 37rem;
-width: 30rem;
+height: 40rem;
+color: white;
+width: 50rem;
 font-size: 1.7rem;
 display: flex;
 flex-direction: column;
 gap:1rem;
-background-color: rgb(67, 186, 180);
+background-color: #023047;
 border-color: black;
 margin-bottom: 1rem;
 justify-content: center;
+border-radius: 2rem;
 }
 
+.caja-form-name {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1rem;
+}
 .caja-form{
 display: flex;
 flex-direction: column;
@@ -192,13 +203,24 @@ line-height: 2rem;
 
 .datos {
 width: 22rem;
-height: 2.5rem;
+margin-top: 0.5rem;
+height: 2.7rem;
 border-radius: 2rem;
 text-align: center;
 }
+
+.asunto {
+width: 45rem;
+height: 2.7rem;
+margin-top: 0.5rem;
+border-radius: 2rem;
+padding: 1rem;
+text-align: center;
+}
 .caja-msg {
-width: 22rem;
+width: 45rem;
 height: 9rem;
+margin-top: 0.5rem;
 border-radius: 2rem;
 padding: 1rem;
 }
@@ -220,7 +242,7 @@ gap:0.5rem;
 align-items: center;
 justify-content:end;
 color:white;
-background-color: #14213D;
+background-color: #3d405b;
 }
 
 footer h2 {
@@ -235,7 +257,7 @@ height: 1.8rem;
 
 /* MEDIA  QUERIES*/
 /* DESKTOPS FIRST */
-@media (max-width: 320px){
+@media (max-width: 799px){
     .header {
     justify-content: space-between;
     grid-template-rows: repeat(2,2fr); 
@@ -273,29 +295,51 @@ height: 1.8rem;
 }   
 
 /* ESTILOS BLOG */
+.blog-link{
+text-decoration:none;
+color: grey;
+}
 
+.blog-link:hover {
+color:black;
+background-color: grey;
+}
 .caja-texto {
 padding-top: 1rem;
-padding-left: 3rem;
-padding-right: 3rem;
+padding-left: 4rem;
+padding-right: 4rem;
 display: flex;
 flex-direction: column;
 flex-flow: wrap;
 }
 
+.consola{
+
+background-color: black;
+color:white;
+}
+
+.caja-texto {
+display: flexbox;
+flex-direction: column;
+align-items: center;
+flex-wrap: wrap;
+}
 .caja-texto h2 {
 /* padding: 0.5rem 1rem; */
 font-size: 3rem;
+margin: 2rem auto;
 }
 
 .caja-texto p {
 font-size: 2rem;
 line-height: 1.5em;
+text-align: justify;
 }
 
 .img-vs {
-width: 100%;
-height: 100%;
+width: 80rem;
+height: 50rem;
 margin-top: 1.2rem;
 margin-right: 1.2rem;
 margin-bottom: 1.2rem;

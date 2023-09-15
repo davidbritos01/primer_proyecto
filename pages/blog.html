@@ -16,35 +16,36 @@
 
       <nav class="header-nav">
         <ul class="header-menu">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="noticias.html">Noticias</a></li>
-          <li><a href="proyectos.html">Proyectos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a class="header-link" href="../index.html">Inicio</a></li>
+          <li><a class="header-link" href="blog.html">Blog</a></li>
+          <li><a class="header-link" href="noticias.html">Noticias</a></li>
+          <li><a class="header-link" href="proyectos.html">Proyectos</a></li>
+          <li><a class="header-link" href="#">Contacto</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="caja-texto">
-        <h2>Por qué un blog ?</h2>
+        <h2>Visual Studio Code en Debian</h2>
         <p>
-          Principalmente es un espacio donde voy a compartir ideas y noticias del mundo GNU/linux, o sea, nada que no se pueda encontrar googleando un poco, al igual que todo lo que voy a escribir.<br> Y como este este año comencé a dar mis primeros pasos en el mundo del Desarrollo Web, qué mejor que mostrar como instalar el famoso y popular Visual Studio Code en distribuciones basadas en Debian, como Ubuntu, Linux Mint y un sin fin de etcétera. <br> Seguramente los linuxeros puristas, van exclamar con los teclados en alto, que se puede programar o tirar código en un editor de texto como Vi,Vim, Nano etc., lo cual es cierto, pero desde mi punto de vista, lo apropiado para un junior es empezar por lo básico. 
+          <a class="blog-link" href="https://es.wikipedia.org/wiki/Visual_Studio_Code" target="_blank" rel="nooponer noreferrer">Visual Studio Code</a> está en el top 10 de los editores para desarrollo más utilizado. Este popular editor el cual fue creado por Microsfot, no sólo se puede no sólo en Windows sino también en macOS como en Linux de manera gratuita.
+          <br>
+          Si nos centramos en Linux como lugar de interés, es bastante sencillo su instalación. Para este ejemplo se va explicar cómo hacerlo en <a class="blog-link" href="https://www.debian.org/distrib/index.es.html" target="_blank" rel="nooponer noreferrer">Debian</a>, pero también aplica estos pasos para Ubuntu, Mint etc. 
+    
+          Para <a class="blog-link" href="https://code.visualstudio.com/download" target="_blank" rel="nooponer noreferrer">descargar</a>Visual Studio Code, se puede hacer utilizando la famosa línea de comandos o bien a través de nuestro navegador favorito (Firefox, Google Chrome, Brave etc.)
         </p>
-        <p>
-          Para descargar Visual Studio Code, se puede hacer utilizando linea de comandos o bien a través de nuestro navegador favorito (Firefox, Google Chrome, Brave etc.)
-        </p>
-      
+
         <img class="img-vs" src="../files/img/img-blog/2.png" alt="img-2">
         <img class="img-vs" src="../files/img/img-blog/4.png" alt="img-4">
         <img class="img-vs" src="../files/img/img-blog/5.png" alt="img-5">
             
         <p>
-          La decarga es medianamente accesible, pero para la instalación es necesario utilizar la famosa Terminal e ingresar un comando para dar inicio a la instlación de Visual Studio Code. <br> Pero antes de  dar este salto, es necesario saber dónde estamos posicionados para saber ubicar nuestro directorio de descargas. <br> Por defecto o de manera predeterminada si escribimos el comando pwd y luego presionamos enter, nos va mostrar por pantalla nuestra ubicación actual. Lo siguiente es utilizar cd, lo cual no permite movernos/desplazarnos entre diferentes directorios de nuestro sistema operativo, pero en este caso, el que nos interesa saber, es el de Descargas. Lo último,  es ultilizar el comando dpkg -i code_1.81.1-1691620686_amd64.deb, ingresar nuestra password o contraseña de usuario y un último enter. A disfrutar Visual Studio Code.
+          La decarga es medianamente accesible, pero para la instalación es necesario utilizar la famosa Terminal e ingresar un comando para dar inicio a la instlación de Visual Studio Code. Pero antes de  dar este salto, es necesario saber dónde estamos posicionados para saber ubicar nuestro directorio de descargas. <br> Con el comando pwd nos va mostrar por pantalla en qué directorio nos encontramos posicionado. Lo siguiente es utilizar el comando cd, lo cual no va permitir movernos/desplazarnos entre los distindos directorios de nuestro sistema operativo, pero en este caso, el que nos interesa saber, es el de Descargas. Lo último,  es ultilizar el comando dpkg -i code_1.81.1-1691620686_amd64.deb, ingresar nuestra password/contraseña de usuario y un último enter. <br>A disfrutar Visual Studio Code !!.
         </p>      
       
         <img class="img-vs" src="../files/img/img-blog/6.png" alt="img-6">
         <img class="img-vs" src="../files/img/img-blog/7.png" alt="img-7">
-        <p>Y bue sino se entendió dejó un link con un video para chequear estos pasos</p>
+        <p>En el caso hipotético y/o posible que no pueda instalar VS Code en tu PC, te dejó abajo un video para chequear estos pasos</p>
         
         <iframe width="443" height="787" src="https://www.youtube.com/embed/aRfUSIsfTwE" title="Instalar editor visual studio code en ubuntu 22.04" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       

@@ -16,11 +16,11 @@
 
       <nav class="header-nav">
         <ul class="header-menu">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="./pages/blog.html">Blog</a></li>
-          <li><a href="./pages/noticias.html">Noticias</a></li>
-          <li><a href="./pages/proyectos.html">Proyectos</a></li>
-          <li><a href="index.html#box-form">Contacto</a></li>
+          <li><a class="header-link" href="index.html">Inicio</a></li>
+          <li><a class="header-link" href="./pages/blog.html">Blog</a></li>
+          <li><a class="header-link" href="./pages/noticias.html">Noticias</a></li>
+          <li><a class="header-link" href="./pages/proyectos.html">Proyectos</a></li>
+          <li><a class="header-link" href="index.html#box-form">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -29,7 +29,7 @@
       <div class="caja1"> 
         <div class="cajas">
           <h2> VS Studio Code en Debian </h2>
-          <p class="parrafo"> Instalar Visual Studio Code en ...</p>
+          <p class="parrafo"> Descarga e instalación en Linux</p>
           <img class="img-main" src="./files/img/pensando.jpg" alt="pensando">
           <a href="./pages/blog.html" target="_blank"><button>Ir al blog</button></a>
         </div>
@@ -37,7 +37,7 @@
 
       <div class="caja2">
         <div class="cajas">
-          <h2> Noticias </h2>
+          <h2> Qué hay de nuevo </h2>
           <p class="parrafo">De todo un poco, un mix sobre programación, eventos, ciberseguridad etc ...</p>
           <img class="img-main" src="./files/img/noticias.jpeg" alt="pensando">
           <a href="./pages/noticias.html" target="_blank"><button>Ir a noticias</button></a>
@@ -58,17 +58,28 @@
         <div class="form">
           <form action="" method="post">
             <div class="caja-form">
-              <label for="name">Nombre:</label>
-              <input class="datos" type="text" id="name" name="user_name">
+              <h2>Contacto</h2>
             </div>
-              
-            <div class="caja-form">
-              <label for="mail">Correo electrónico:</label>
-              <input class="datos" type="email" id="mail" name="user_mail" placeholder="ejemplo@tucorreo.com">
+
+            <div class="caja-form-name">
+              <div class="caja-form">
+                <label for="name">Nombre</label>
+                <input class="datos" type="text" id="name" name="user_name">
+              </div>
+
+              <div class="caja-form">
+                <label for="mail">Email</label>
+                <input class="datos" type="email" id="mail" name="user_mail" placeholder="ejemplo@tucorreo.com">
+              </div>
             </div>
 
             <div class="caja-form">
-              <label for="message">Mensaje:</label>
+              <label for="name">Asunto</label>
+              <input class="asunto" type="text" id="asunto" name="user_subject">
+            </div>
+
+            <div class="caja-form">
+              <label for="message">Mensaje</label>
               <textarea class="caja-msg" id="mail" name="user_message"></textarea>
             </div>
       
