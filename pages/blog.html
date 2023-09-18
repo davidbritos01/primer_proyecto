@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="shortcut icon" href="../files/img/favicon/favicon-32x32.png" type="image/x-icon">
     <title>Linux Juniors</title>
     <link rel="stylesheet" href="../css/style.css">
@@ -11,7 +12,7 @@
     <header class="header">
       <div class="header-logo">
         <img class="header-img" src="../files/img/penguin.png" alt="tux">
-        <h1>Linux Juniors</h1>
+          <h1>Linux Juniors</h1>
       </div>
 
       <nav class="header-nav">
@@ -25,36 +26,58 @@
       </nav>
     </header>
     <main class="main">
-      <div class="caja-texto">
-        <h2>Visual Studio Code en Debian</h2>
-        <p>
-          <a class="blog-link" href="https://es.wikipedia.org/wiki/Visual_Studio_Code" target="_blank" rel="nooponer noreferrer">Visual Studio Code</a> está en el top 10 de los editores para desarrollo más utilizado. Este popular editor el cual fue creado por Microsfot, está disponible para Windows, macOS y Linux de manera gratuita.
-          <br>
-          Si nos centramos en Linux como lugar de interés, es bastante sencillo su instalación. Para este ejemplo se va explicar cómo hacerlo en <a class="blog-link" href="https://www.debian.org/distrib/index.es.html" target="_blank" rel="nooponer noreferrer">Debian</a>, pero también aplica estos pasos para Ubuntu, Mint etc. 
+        <div class="container d-flex flex-column bd-highlight">
+          <h2>Visual Studio Code en Debian</h2>
+          <p class="parrafo">
+            <a class="blog-link" href="https://es.wikipedia.org/wiki/Visual_Studio_Code" target="_blank" rel="nooponer noreferrer">Visual Studio Code</a> está en el top 10 de los editores para desarrollo más utilizado. Este popular editor el cual fue creado por Microsfot, está disponible para Windows, macOS y Linux de manera gratuita.
+          </p>
     
-          Para <a class="blog-link" href="https://code.visualstudio.com/download" target="_blank" rel="nooponer noreferrer">descargar</a>Visual Studio Code, se puede hacer utilizando la famosa línea de comandos o bien a través de nuestro navegador favorito (Firefox, Google Chrome, Brave etc.)
-        </p>
-
-        <img class="img-vs" src="../files/img/img-blog/2.png" alt="img-2">
-        <img class="img-vs" src="../files/img/img-blog/4.png" alt="img-4">
-        <img class="img-vs" src="../files/img/img-blog/5.png" alt="img-5">
+          <p class="parrafo"> Si nos centramos en Linux como lugar de interés, es bastante sencillo su instalación. Para este ejemplo se va explicar cómo hacerlo en <a class="blog-link" href="https://www.debian.org/distrib/index.es.html" target="_blank" rel="nooponer noreferrer">Debian</a>, pero también aplica estos pasos para Ubuntu, Mint etc. 
+          </p>
+          <p class="parrafo">
+            Para <a class="blog-link" href="https://code.visualstudio.com/download" target="_blank" rel="nooponer noreferrer">descargar</a>Visual Studio Code, se puede hacer utilizando la famosa línea de comandos o bien a través de nuestro navegador favorito (Firefox, Google Chrome, Brave etc.)
+          </p>
             
-        <p>
-          La decarga es medianamente accesible, pero para la instalación es necesario utilizar la famosa Terminal e ingresar un comando para dar inicio a la instlación de Visual Studio Code. Pero antes de  dar este salto, es necesario saber dónde estamos posicionados para saber ubicar nuestro directorio de descargas. <br> Con el comando pwd nos va mostrar por pantalla en qué directorio nos encontramos posicionado. Lo siguiente es utilizar el comando cd, lo cual no va permitir movernos/desplazarnos entre los distindos directorios de nuestro sistema operativo, pero en este caso, el que nos interesa saber, es el de Descargas. Lo último,  es ultilizar el comando dpkg -i code_1.81.1-1691620686_amd64.deb, ingresar nuestra password/contraseña de usuario y un último enter. <br>A disfrutar Visual Studio Code !!.
-        </p>      
-      
-        <img class="img-vs" src="../files/img/img-blog/6.png" alt="img-6">
-        <img class="img-vs" src="../files/img/img-blog/7.png" alt="img-7">
-        <p>En el caso hipotético y/o posible que no pueda instalar VS Code en tu PC, te dejó abajo un video para chequear estos pasos</p>
-        
-        <iframe width="443" height="787" src="https://www.youtube.com/embed/aRfUSIsfTwE" title="Instalar editor visual studio code en ubuntu 22.04" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      
-      </div>
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+              <img class="rounded mx-auto d-block img-thumbnail mb-3" src="../files/img/img-blog/2.png" alt="img-2">
+              <img class="rounded mx-auto d-block img-thumbnail mb-3" src="../files/img/img-blog/4.png" alt="img-4">
+              <img class="rounded mx-auto d-block img-thumbnail mb-3" src="../files/img/img-blog/5.png" alt="img-5">
+            </div>
+          </div>
+        </div>     
+        <div class="container">      
+          <p class="parrafo">
+            La decarga es medianamente accesible, pero para la instalación es necesario utilizar la famosa Terminal e ingresar un comando para dar inicio a la instlación de Visual Studio Code. Pero antes de  dar este salto, es necesario saber dónde estamos posicionados para saber ubicar nuestro directorio de descargas. <br> Con el comando pwd nos va mostrar por pantalla en qué directorio nos encontramos posicionado. Lo siguiente es utilizar el comando cd, lo cual no va permitir movernos/desplazarnos entre los distindos directorios de nuestro sistema operativo, pero en este caso, el que nos interesa saber, es el de Descargas. Lo último,  es ultilizar el comando dpkg -i code_1.81.1-1691620686_amd64.deb, ingresar nuestra password/contraseña de usuario y un último enter. <br>A disfrutar Visual Studio Code !!.
+          </p>      
+        </div>
+        <div>
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <img class="rounded mx-auto d-block img-thumbnail mb-3" src="../files/img/img-blog/6.png" alt="img-6">
+            <img class="rounded mx-auto d-block img-thumbnail mb-3" src="../files/img/img-blog/7.png" alt="img-7">
+          </div>
+        </div>
+
+        <div class="container" >
+          <p class="parrafo mb-3">En el caso hipotético y/o posible de que no puedas instalar VS Code en tu PC, te dejó abajo un video para chequear estos pasos. La verdad que está bastante bueno y permite resumir en pocos pasos todo lo explicado.</p>
+          <iframe class="ratio ratio-4x3" width="443" height="787" src="https://www.youtube.com/embed/aRfUSIsfTwE" title="Instalar editor visual studio code en ubuntu 22.04" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+        </div>    
     </main>
   
     <footer class="footer">
-      <h2>Ruben David Britos - Estudiante de Coderhouse </h2>
-      <a href="#"><img class="icono-linkedin"src="../files/img/logo-linkedin.png" alt="icono-linkedin"></a>
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-md-6 col-lg-9 col-xl-9">
+          <p>Ruben David Britos - Curso de Desarrollo Web - Coderhouse</p>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+          <a class="alert-link" href="../pages/portfolio.html" target="_blank"><img class= "icono img-fluid" src="../files/img/icono.png" alt="icono"></a>
+          
+        </div>
+      </div>
     </footer>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
