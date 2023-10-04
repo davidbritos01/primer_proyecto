@@ -30,3 +30,20 @@ $color-footer: black;
 
 /*  MAIN */
 $bg-color-main:white;
+
+/* MIXINS */
+
+@mixin flex-colum-center {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+}
+
+@mixin flex-row-center {
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    justify-content: center;
+}
