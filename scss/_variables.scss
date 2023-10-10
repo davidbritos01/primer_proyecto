@@ -13,10 +13,10 @@ $font-size-nav:1.5rem;
 $color-nav-link:black;
 
 /* SUBTITULOS PAGINAS */
-$subtitles-color: white;
+$subtitles-color: black;
 $subtitles-size: 3rem;
-$subtitles-width:bold;
-$subtitles-margintop:1rem;
+$subtitles-weight:bold;
+$subtitles-paddingtop:1rem;
 
 /* PARRAFOS */
 $font-size-parrafos: 1.7rem;
@@ -37,6 +37,9 @@ $bg-color-main:white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    justify-content: space-around;
     align-content: center;
     text-align: center;
 }
@@ -46,4 +49,11 @@ $bg-color-main:white;
     flex-wrap: wrap;
     gap:1rem;
     justify-content: center;
+}
+
+@mixin subtitles {
+    color:$subtitles-color;
+    font-size: $subtitles-size;
+    font-weight: $subtitles-weight;
+    padding-top: $subtitles-paddingtop;
 }

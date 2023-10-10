@@ -79,11 +79,15 @@ header .nav-link {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  justify-content: space-around;
   align-content: center;
   text-align: center;
   border-radius: 5%;
 }
 .cajas .cajas h2 {
+  font-size: 3rem;
   font-weight: bold;
 }
 .cajas p {
@@ -100,25 +104,36 @@ header .nav-link {
 /* formulario de contacto */
 #box-form {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
   background-color: white;
 }
 #box-form form {
-  height: 40rem;
+  height: 48rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  justify-content: space-around;
   align-content: center;
   text-align: center;
   border-radius: 2rem;
 }
 #box-form form .caja-form h2 {
-  text-align: center;
-  align-content: center;
-  margin-top: 1rem;
+  color: black;
+  font-size: 3rem;
   font-weight: bold;
+  padding-top: 1rem;
+  /*    text-align: center;
+     align-content: center;
+     margin-top: 1rem;
+     font-weight: bold;    */
 }
 #box-form form .caja-form-name {
   font-size: 1.4rem;
@@ -131,6 +146,9 @@ header .nav-link {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  justify-content: space-around;
   align-content: center;
   text-align: center;
   line-height: 2rem;
@@ -182,10 +200,14 @@ footer .icono {
 }
 
 /* ESTILOS BLOG */
-.caja-blog h2 {
+.caja-blog .subtitles {
+  color: black;
   font-size: 3rem;
   font-weight: bold;
-  color: white;
+  padding-top: 1rem;
+  /* font-size: $subtitles-size;
+  font-weight: $subtitles-width;
+  color:$subtitles-color; */
 }
 .caja-blog p {
   font-size: 1.7rem;
@@ -206,9 +228,13 @@ footer .icono {
 }
 
 /* STYLES NOTICIAS */
-h2 {
+.subtitles {
+  color: black;
   font-size: 3rem;
   font-weight: bold;
+  padding-top: 1rem;
+  /* font-size: $subtitles-size;
+  font-weight: $subtitles-width; */
 }
 
 p {
@@ -228,6 +254,14 @@ p {
   width: 40em;
 }
 
+/* PROYECTOS STYLES */
+.subtitles {
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
 /* portfolio */
 .skills {
   font-size: 1.7rem;
@@ -243,6 +277,9 @@ p {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    justify-content: space-around;
     align-content: center;
     text-align: center;
   }

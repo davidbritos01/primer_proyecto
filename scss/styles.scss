@@ -82,7 +82,9 @@ header {
      
     
     .cajas h2 {
-    font-weight: $subtitles-width;
+        font-size: $subtitles-size;
+        font-weight: $subtitles-weight;
+        
     }
 
     p {
@@ -102,20 +104,21 @@ header {
 
 /* formulario de contacto */
 #box-form {
-    @include flex-row-center;
+    @include flex-colum-center;
     background-color: white;
     
 
     form {
-        height: 40rem;
+        height: 48rem;
         @include flex-colum-center;
          border-radius: 2rem;
 
         .caja-form h2 {
-            text-align: center;
+            @include subtitles;
+         /*    text-align: center;
             align-content: center;
             margin-top: 1rem;
-            font-weight: bold;   
+            font-weight: bold;    */
         } 
         
         .caja-form-name {
@@ -186,10 +189,11 @@ footer {
 
 .caja-blog {
 
-    h2 {
-        font-size: $subtitles-size;
+    .subtitles {
+        @include subtitles;
+        /* font-size: $subtitles-size;
         font-weight: $subtitles-width;
-        color:$subtitles-color;
+        color:$subtitles-color; */
     }
 
     p {
@@ -215,9 +219,10 @@ footer {
 
 /* STYLES NOTICIAS */
 
-h2 {
-    font-size: $subtitles-size;
-    font-weight: $subtitles-width;
+.subtitles {
+    @include subtitles;
+    /* font-size: $subtitles-size;
+    font-weight: $subtitles-width; */
    
 }
 
@@ -239,6 +244,12 @@ p {
     height: 30em;
     width: 40em;
     
+}
+
+/* PROYECTOS STYLES */
+
+.subtitles {
+    @include subtitles;
 }
 
 /* portfolio */
