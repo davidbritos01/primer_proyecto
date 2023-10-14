@@ -259,6 +259,11 @@ p {
   padding-top: 1rem;
 }
 
+.img-proyectos {
+  height: 12rem;
+  width: 11rem;
+}
+
 /* portfolio */
 .title-portfolio {
   font-size: 4rem;
