@@ -6,13 +6,13 @@ $titles-size: 2rem;
 $titles-font-family:'Roboto Mono', monospace;
 $titles-weight:bold;
 /* $bg-color-header:#3d405b; */
-$bg-color-header:#bfd7b5;
+
 
 /* NAV HEADER */
 $font-size-nav:1.5rem;
 $color-nav-link:black;
 
-/* SUBTITULOS PAGINAS */
+/* SUBTITULOS PAGINAS h2*/
 $subtitles-color: black;
 $subtitles-size: 3rem;
 $subtitles-weight:bold;
@@ -27,6 +27,7 @@ $paddings:3rem;
 /*  footer */
 $font-size-footer:1rem;
 $color-footer: black;
+$bg-color-footer:#bfd7b5;
 
 /*  MAIN */
 $bg-color-main:white;
@@ -37,7 +38,7 @@ $bg-color-main:white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
     text-align: center;
 }

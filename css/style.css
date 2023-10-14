@@ -4,7 +4,7 @@
 /* TITULO HEADER */
 /* $bg-color-header:#3d405b; */
 /* NAV HEADER */
-/* SUBTITULOS PAGINAS */
+/* SUBTITULOS PAGINAS h2*/
 /* PARRAFOS */
 /*  footer */
 /*  MAIN */
@@ -16,14 +16,11 @@
   box-sizing: border-box;
 }
 
-html {
+html, body {
   font-size: 62.5%;
-  height: 100%;
-}
-
-body {
   max-width: 100%;
-  min-height: 100%;
+  height: 100%;
+  min-height: 100vh;
 }
 
 li {
@@ -38,7 +35,6 @@ header {
   width: 100%;
   font-family: "Roboto Mono", monospace;
   font-size: 1.5rem;
-  background-color: #bfd7b5;
 }
 header .header-logo {
   display: flex;
@@ -48,12 +44,15 @@ header .header-logo {
   font-weight: bold;
 }
 header .header-logo h1 {
-  color: black;
   font-size: 2rem;
 }
 header .header-img {
   width: 5rem;
   height: 5rem;
+}
+header .header-img:hover {
+  transform: scale(0.5);
+  transition: 1s;
 }
 header .nav-link {
   color: black;
@@ -61,43 +60,51 @@ header .nav-link {
 
 /* STYLES MAIN  */
 .main {
+  min-height: 100%;
   width: 100%;
-  min-height: 100vh;
   font-family: "Roboto Flex", sans-serif;
-  background-color: white;
 }
-.main .img-main {
-  width: 30em;
-  height: 25em;
-  padding-bottom: 1.5em;
+.main .caja {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
 }
-
-.cajas {
+.main .caja .cajas {
+  min-height: 55rem;
+  width: 45rem;
   color: black;
   padding: 1.2rem;
   margin-bottom: 3rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-content: center;
   text-align: center;
   border-radius: 5%;
 }
-.cajas .cajas h2 {
+.main .caja .cajas h2 {
   font-size: 3rem;
   font-weight: bold;
 }
-.cajas p {
+.main .caja .cajas p {
   text-align: center;
   font-size: 1.7rem;
   line-height: 3rem;
 }
-.cajas button {
+.main .caja .cajas .img-main {
+  width: 45em;
+  height: 25em;
+  padding-bottom: 1.5em;
+}
+.main .caja .cajas button {
+  width: 10rem;
   margin-top: 1rem;
-  border-radius: 7%;
   border-radius: 5rem;
+  font-size: 1.7rem;
+  cursor: context-menu;
 }
 
 /* formulario de contacto */
@@ -105,23 +112,22 @@ header .nav-link {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-content: center;
   text-align: center;
-  background-color: white;
+  height: 100%;
 }
 #box-form form {
-  height: 48rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-content: center;
   text-align: center;
   border-radius: 2rem;
 }
 #box-form form .caja-form h2 {
-  font-size: bold;
+  font-weight: bold;
   font-size: 3rem;
 }
 #box-form form .caja-form-name {
@@ -135,7 +141,7 @@ header .nav-link {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-content: center;
   text-align: center;
   line-height: 2rem;
@@ -184,6 +190,10 @@ footer h2 {
 footer .icono {
   width: 4.5rem;
   height: 4.5rem;
+}
+footer .icono:hover {
+  transform: scale(0.5);
+  transition: 1s;
 }
 
 /* ESTILOS BLOG */
@@ -250,23 +260,137 @@ p {
 }
 
 /* portfolio */
+.title-portfolio {
+  font-size: 4rem;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+
 .skills {
   font-size: 1.7rem;
 }
 
-.portfolio-contacto ul li {
-  margin-bottom: 1rem;
+.caja-skills-main {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 1, auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "skills-title" "skills" "contacto";
+  width: 100%;
+  height: 100%;
+}
+.caja-skills-main .skills-title {
+  font-size: 3rem;
+  text-align: center;
+}
+.caja-skills-main .skills {
+  grid-area: "skills";
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "so" "dev" "idioma";
+}
+.caja-skills-main .skills .so {
+  grid-area: "so";
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+}
+.caja-skills-main .skills .dev {
+  grid-area: "dev";
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 1, auto;
+  grid-template-areas: "dev1" "dev2";
+}
+.caja-skills-main .skills .dev .dev1 {
+  grid-area: "dev1";
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+}
+.caja-skills-main .skills .dev .dev2 {
+  grid-area: "dev2";
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+}
+.caja-skills-main .skills .idioma {
+  grid-area: "idioma";
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+}
+.caja-skills-main .skills .img-portfolio {
+  width: 10rem;
+  height: 10rem;
+}
+.caja-skills-main .contacto {
+  grid-area: "contacto";
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 991px) {
   .header-logo {
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
     text-align: center;
+    margin: 1rem auto 1rem;
+  }
+}
+@media (max-width: 770px) {
+  .caja-skills-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+  }
+  .caja-skills-main .skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+  }
+  .caja-skills-main .skills .so {
+    margin-bottom: 2rem;
+  }
+  .caja-skills-main .skills .dev {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+  }
+  .caja-skills-main .skills .dev .dev1 {
+    margin-bottom: 1rem;
+  }
+  .caja-skills-main .skills .contacto {
+    margin-bottom: 2rem;
   }
 }
 
